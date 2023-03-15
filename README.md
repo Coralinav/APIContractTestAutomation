@@ -9,4 +9,5 @@ Implement Test Automation for the following API: “https://pokeapi.co/”
 
 
 # How to configure the environment
+- Validate you have JDK17
 - Clone the project
