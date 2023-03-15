@@ -12,11 +12,11 @@ public class PokeApiTest {
                 .baseUri("https://pokeapi.co")
                 .log()
                 .all().
-                // Getting the endpoint
-                when()
+        // Getting the endpoint
+        when()
                 .get("/api/v2/berry").
-                // Validate the JSON Schema
-                then()
+        // Validate the JSON Schema
+        then()
                 .log()
                 .all()
                 .statusCode(200)
