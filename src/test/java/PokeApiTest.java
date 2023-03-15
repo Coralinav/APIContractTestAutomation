@@ -2,7 +2,6 @@ import io.restassured.module.jsv.JsonSchemaValidator;
 import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 
-
 public class PokeApiTest {
 
     @Test
@@ -13,11 +12,11 @@ public class PokeApiTest {
                 .baseUri("https://pokeapi.co")
                 .log()
                 .all().
-        // Getting the endpoint
-        when()
+                // Getting the endpoint
+                when()
                 .get("/api/v2/berry").
-        // Validate the JSON Schema
-        then()
+                // Validate the JSON Schema
+                then()
                 .log()
                 .all()
                 .statusCode(200)
